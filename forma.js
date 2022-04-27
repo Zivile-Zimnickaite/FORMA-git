@@ -104,8 +104,6 @@ studentForm.addEventListener('submit', (event) => {
         return;
     }
 
-
-
     let formInterests = document.querySelectorAll('input[name=interest]:checked');
     let interestValues = [...formInterests].map(element => {
         return element.value;
@@ -122,7 +120,6 @@ studentForm.addEventListener('submit', (event) => {
         group: event.target.elements.group.value,
         interests: interestValues,
     };
-
 
 
     if (editStudent) {
@@ -194,10 +191,14 @@ function renderStudent(studentData) {
     studentItKnowledgeEl.innerHTML = `<strong>IT Knowledge: </strong><span class="student-it-knowledge">${personItKnowledge}</span>`;
     let studentGroupEl = document.createElement('p');
     studentGroupEl.innerHTML = `<strong>Group: </strong><span class="student-group">${personGroup}</span>`;
+
     let interestWrapperEl = document.createElement('div');
+    interestWrapperEl.classList.add('intWrap');
+
     let interestTitleEl = document.createElement('h4');
     interestTitleEl.textContent = 'Interests:';
     let studentInterestsEl = document.createElement('ul');
+    studentInterestsEl.classList.add('ul-class')
     interests.forEach((interest) => {
         let interestItem = document.createElement('li');
         interestItem.textContent = interest;

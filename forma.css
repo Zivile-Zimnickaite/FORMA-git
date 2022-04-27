@@ -5,19 +5,83 @@
     margin: auto;
     
     }
-    
+    #search {
+        display: flex;
+        margin: 10px auto 10px auto;
+        width: 450px;
+        color: black;
+        padding: 30px;
+        gap: 5px;
+        background-color: rgba(128, 128, 128, 0.052);
+        border-color: black;
+        border: 1px solid rgba(84, 84, 84, 0.193);
+        border-radius: 5px;
+    }
     #student-form {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        color: rgb(156, 34, 34);
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        color: rgb(1, 10, 26);
         padding: 30px;
         gap: 10px;
-        background-color: rgb(237, 255, 228);
+        background-color: rgb(233, 234, 236);
         border-color: black;
         border: 2px solid rgba(84, 84, 84, 0.383);
+        border-radius: 5px;
+        }
+
+        .student-item {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto 10px auto;
+        width: 450px;
+        color: black;
+        padding: 30px;
+        gap: 5px;
+        background-color: rgba(128, 128, 128, 0.052);
+        border-color: black;
+        border: 1px solid rgba(84, 84, 84, 0.193);
+        border-radius: 5px;
+        }
+
+        .student-item > p {
+          margin: 1px;
         }
     
+        h4 {
+            margin: 1px;
+            display: flex;
+        }
+
+        .intWrap{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .ul-class {
+            margin: 1px;
+        }
+
+ul > li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 2px;
+    background-color: rgba(240, 248, 255, 0.596);
+    text-align: left;
+}
+
+
+#alert {
+    background-color: rgba(128, 128, 128, 0.285);
+    color: rgb(157, 7, 7);
+    padding: 5px;
+   border-radius: 5px;
+   width: 450px;
+}
+
     .output-info {
         width: 50%;
     }
