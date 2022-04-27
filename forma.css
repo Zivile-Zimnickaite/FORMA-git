@@ -1,0 +1,36 @@
+
+
+.main-section {
+    width: 1280px;
+    margin: auto;
+    
+    }
+    
+    #student-form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        color: rgb(156, 34, 34);
+        padding: 30px;
+        gap: 10px;
+        background-color: rgb(237, 255, 228);
+        border-color: black;
+        border: 2px solid rgba(84, 84, 84, 0.383);
+        }
+    
+    .output-info {
+        width: 50%;
+    }
+    
+    
+    .input-error {
+        border: 2px solid red;
+    }
+    
+    .input-error-message {
+        color: red;
+    }
+    
+    .error-alert {
+    color: red;
+    }
